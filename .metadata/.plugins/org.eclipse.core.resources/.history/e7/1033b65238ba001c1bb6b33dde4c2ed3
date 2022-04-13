@@ -1,0 +1,43 @@
+package practice;
+
+public class Person {
+	
+	private int height;
+	private int weight;
+	
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	
+	public Person(int height, int weight) {
+		super();
+		this.height = height;
+		this.weight = weight;
+	}
+	
+	public String Cal() {
+		
+		if ((getWeight() / 1.19) + 100 <= getHeight() && getHeight() <= (getWeight() / 1.0) + 100)
+	{
+		return "l";
+	}
+	else if ((getWeight() / 0.99) + 100 <= getHeight() && getHeight() <= (getWeight() / 0.8) + 100)
+	{
+		return "m";
+	}
+	else if ((getWeight() / 0.79) + 100 <= getHeight() && getHeight() <= (getWeight() / 0.60) + 100)
+	{
+		return "n";
+	}
+		return "None";
+	}
+}

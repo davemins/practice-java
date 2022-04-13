@@ -1,0 +1,21 @@
+package practice;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Node person1 = new Node(170, 20);
+
+		Node person2 = new Node(170, 20);
+
+		Node person3 = new Node(170, 20);
+
+		Node person4 = new Node(170, 20);
+
+		Node person5 = new Node(170, 20);
+
+		person5.show();
+
+	}
+
+}

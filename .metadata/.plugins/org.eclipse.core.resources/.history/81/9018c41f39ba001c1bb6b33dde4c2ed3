@@ -1,0 +1,64 @@
+package forth;
+
+public class Node {
+
+	private double tall;
+	private double weight;
+	private int state;
+	
+	public double gettall() 
+	{
+		return tall;
+	}
+	
+	public void settall(double tall) 
+	{
+		this.tall = tall;
+	}
+	
+	public double getweight() 
+	{
+		return weight;
+	}
+	
+	public void setweight(double weight) 
+	{
+		this.weight = weight;
+	}
+	
+	public int getstate()
+	{
+		return state;
+	}
+	
+	public void setstate(int state) 
+	{
+		this.state = state;
+	}
+	
+	public Node(double tall, double weight, int state)
+	{
+		this.tall = tall;
+		this.weight = weight;
+		this.state = state;
+	}
+	
+
+	public Node cal()
+	{
+			if ((this.weight / 1.19) + 100 <= this.tall && this.tall <= (this.weight / 1.0) + 100)
+			{
+				this.state = 1;
+			}
+			else if ((this.weight / 0.99) + 100 <= this.tall && this.tall <= (this.weight / 0.8) + 100)
+			{
+				this.state = 2;
+			}
+			else if ((this.weight / 0.79) + 100 <= this.tall && this.tall <= (this.weight / 0.60) + 100)
+			{
+				this.state = 3;
+			}
+			return Node new();
+	}	
+
+}

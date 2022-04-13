@@ -1,0 +1,41 @@
+package practice;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Person person1 = new Person(180, 80);
+		Person person2 = new Person(175, 60);
+		Person person3 = new Person(170, 70);
+		Person person4 = new Person(155, 50);
+		Person person5 = new Person(190, 100);
+
+		int l, m, n;
+		
+		l = 0;
+		m = 0;
+		n = 0;
+
+		
+		
+
+	    System.out.print("저체중(" + n + "명)   |");
+	    for (int i = 0; i < n; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("표준 체중(" + m + "명)|");
+	    for (int i = 0; i < m; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("과체중(" + l + "명)   |");
+	    for (int i = 0; i < l; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	}
+
+}

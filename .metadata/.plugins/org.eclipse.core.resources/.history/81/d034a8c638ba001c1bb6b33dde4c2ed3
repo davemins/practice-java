@@ -1,0 +1,68 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static double Hundred = 100.0;
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Person [] persons = new Person[5];
+		
+		for(int i = 0; i < 5; i++)
+		{
+			System.out.print("키와 체중을 입력하시오. : ");
+			double var_height, var_weight;
+			var_height = scan.nextDouble();
+			var_weight = scan.nextDouble();
+			
+			persons[i] = new Person(var_height, var_weight);
+		}
+			
+		int l, m, n;
+		
+		l = 0;
+		m = 0;
+		n = 0;
+		
+		for(int i = 0; i < 5; i++) 
+		{
+			
+			if ((persons[i].getWeight() / 1.19) + 100 <= persons[i].getHeight() && persons[i].getHeight() <= (persons[i].getWeight() / 1.0) + 100)
+		{
+			l += 1;
+		}
+		else if ((persons[i].getWeight() / 0.99) + 100 <= persons[i].getHeight() && persons[i].getHeight() <= (persons[i].getWeight() / 0.8) + 100)
+		{
+			m += 1;
+		}
+		else if ((persons[i].getWeight() / 0.79) + 100 <= persons[i].getHeight() && persons[i].getHeight() <= (persons[i].getWeight() / 0.60) + 100)
+		{
+			n += 1;
+		}
+			
+		}
+	
+	    System.out.print("저체중(" + n + "명)   |");
+	    for (int i = 0; i < n; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("표준 체중(" + m + "명) |");
+	    for (int i = 0; i < m; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("과체중(" + l + "명)   |");
+	    for (int i = 0; i < l; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	}
+
+}

@@ -1,0 +1,116 @@
+package practice;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Person person1 = new Person(180, 65);
+		Person person2 = new Person(175, 60);
+		Person person3 = new Person(170, 70);
+		Person person4 = new Person(155, 50);
+		Person person5 = new Person(190, 100);
+
+		
+		
+		int l, m, n;
+		
+		l = 0;
+		m = 0;
+		n = 0;
+		
+		{
+			if (person1.Cal() == "l")
+			{
+				l += 1;
+			}
+			else if (person1.Cal() == "m")
+			{
+				m += 1;
+			}
+			else if (person1.Cal() == "n")
+			{
+				n += 1;
+			}
+		}
+		
+		{
+			if (person2.Cal() == "l")
+			{
+				l += 1;
+			}
+			else if (person2.Cal() == "m")
+			{
+				m += 1;
+			}
+			else if (person2.Cal() == "n")
+			{
+				n += 1;
+			}
+		}		
+		
+		{
+			if (person3.Cal() == "l")
+			{
+				l += 1;
+			}
+			else if (person3.Cal() == "m")
+			{
+				m += 1;
+			}
+			else if (person3.Cal() == "n")
+			{
+				n += 1;
+			}
+		}		
+		
+		{
+			if (person4.Cal() == "l")
+			{
+				l += 1;
+			}
+			else if (person4.Cal() == "m")
+			{
+				m += 1;
+			}
+			else if (person4.Cal() == "n")
+			{
+				n += 1;
+			}
+		}		
+		
+		{
+			if (person5.Cal() == "l")
+			{
+				l += 1;
+			}
+			else if (person5.Cal() == "m")
+			{
+				m += 1;
+			}
+			else if (person5.Cal() == "n")
+			{
+				n += 1;
+			}
+		}
+		
+		
+	    System.out.print("저체중(" + n + "명)   |");
+	    for (int i = 0; i < n; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("표준 체중(" + m + "명)|");
+	    for (int i = 0; i < m; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	    
+	    System.out.print("과체중(" + l + "명)   |");
+	    for (int i = 0; i < l; i++) {
+	      System.out.print("*");
+	    }
+	    System.out.print("\n");
+	}
+
+}

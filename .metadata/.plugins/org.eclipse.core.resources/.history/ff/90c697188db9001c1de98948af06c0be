@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Student student = new Student("홍길동" ,20, 175, 70, "20191727", 1, 4.5);
+		student.show();
+		
+		Teacher teacher = new Teacher("이순신", 25, 180, 120, "ABC201", 30000000, 5);
+		teacher.show();
+				
+
+	}
+
+}

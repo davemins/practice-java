@@ -1,0 +1,13 @@
+package Practice;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		String test1 = new String("test");
+		String test2 = new String("test");
+		if(test1.equals(test2)) {
+			System.out.print("°°´Ù");		}
+
+	}
+
+}

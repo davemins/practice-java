@@ -1,0 +1,14 @@
+package Practice;
+
+public class equals {
+
+	public static void main(String[] args) {
+		String test1 = new String("ff");
+		String test2 = "ff";
+		if(test1 == test2) {
+			System.out.print("°°´Ù");		}
+
+		
+	}
+
+}
